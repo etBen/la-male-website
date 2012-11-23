@@ -1,0 +1,114 @@
+<!DOCTYPE html> 
+<html lang="fr"> 
+<head> 
+	<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type"/> 
+	<title>La Malédiction du Mardi - le petit apéro du dernier mardi du mois</title> 
+	<meta property="og:title" content="La Malédiction du Mardi - le petit apéro du dernier mardi du mois" />
+	<meta property="og:description" content="#29 Piston Pélican : 
+											Ici, vous pouvez apporter votre dîner, sans vous cacher ! On vous prendra pas la tête si vous n'achetez pas votre saucisson sur place...
+			Cela dit, soyez réglos ! Consommez les boissons du bar !
+			Alors oui j'ai repompé le site, et oui je n'avais pas d'inspiration." /> 
+	<link rel="icon" type="image/png" href="/_img/tete-poulet.png" /> 
+	<link 	type="text/css" rel="stylesheet" media="screen" href="_css/style.css"/> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+<script type="text/javascript" rel="javascript" media="screen" src="_js/swfobject.js" ></script> 
+<script type="text/javascript" rel="javascript" media="screen" src="_js/jquery-1.4.3.min.js" ></script>  
+<script type="text/javascript" rel="javascript" media="screen" src="_js/jquery.easyRotate.js" ></script>
+<script type="text/javascript" rel="javascript" media="screen" src="_js/date-fr-FR.js" ></script>
+<script type="text/javascript" rel="javascript" media="screen" src="_js/barometer.js" ></script>
+	
+
+  <!--[if IE]>
+    <script src="_js/html5.js"></script>
+  <![endif]--> 
+</head> 
+<body> 
+  <div id="wrapper"> 
+     <div id="fond"></div> 
+  	 <header> 
+    		<h1> 
+			     <a href="/"> 
+          	<img id="poulet" alt="" src="_img/poulet.png"> 
+          	<img src="_img/logo.gif" alt="La Malé"> 
+          	<span>La Malédiction du Mardi</span> 
+        	</a> 
+       </h1> 
+		<a href="vote.php" class="stikers"><img src="_img/vote_now.png" alt="Votez maintenant" /></a>
+    	<nav>
+          <ul>
+            <li><em>Accueil</em></li>
+			<li><a href="vote.php">Le web 9.0</a></li>		
+            <li><a href="what.html">Le concept</a></li>
+            <li><a href="where.html">Les lieux</a></li>
+            <li><a href="com.html">Les stars</a></li>
+          </ul>
+        </nav>
+  	</header> 
+  	<div id="baro">
+		<div id="blueNeedle">
+			<img alt="" src="_img/aiguille-horloge.png">
+		</div>
+		<span id="day_male"></span>
+		<span id="day_today">J-</span>
+		<img alt="" src="_img/dateMale.gif" class="dateMale" />
+		<img alt="" src="_img/cadran-aiguille.gif" class="cadran" />
+		<div id="poiscaille"></div>
+		<img alt="" src="_img/pied-horloge.gif" class="piedHorloge" />
+	</div>
+	<div id="twitter_app"> 
+	</div> 
+	
+	<h2>La prochaine Malé</h2>
+    <section id="event" role="main"> 		
+  	 <article id="VoteFor">
+		<a href="where.html">
+			???
+			<span>et pour le prochain lieu de la malé</span>
+		</a>
+	 </article>
+	 <article id="nextMale"> 
+		
+		<h3><strong>#29</strong> Piston Pélican </h3> 		
+        <dl>
+			<dt>Date :</dt>  
+			<dd><strong>30 octobre 2012</strong></dd>
+			<dt>Lieu :</dt>  
+			<dd><strong>Piston Pélican</strong></dd>
+		</dl>
+		<p>
+			Ici, vous pouvez apporter votre dîner, sans vous cacher ! On vous prendra pas la tête si vous n'achetez pas votre saucisson sur place...<br />
+			Cela dit, soyez réglos ! Consommez les boissons du bar !<br />
+			Alors oui j'ai repompé le site, et oui je n'avais pas d'inspiration.
+			
+		</p>
+		<dl>
+			<dt>Adresse :</dt>  
+			<dd><a href="where.html#piston"><strong>15, rue de Bagnolet, 75020 Paris</strong></a></dd>
+        </dl>  
+      </article> 
+    </section> 
+  </div> 
+
+<script type="text/javascript"> 
+		
+	$(window).load(function(){
+		
+		var bm = new Barometer();
+		bm.start();
+		
+		
+	});    	
+  var flashvars = {};
+  var params = {wmode:"transparent",scale:"noScale",salign:"tl",allowscriptAccess:"always"};
+  var attributes = {};
+  swfobject.embedSWF("_swf/TwitterLaMale.swf", "twitter_app", 250,400, "9.0.0", "swf/expressInstall.swf", flashvars, params, attributes);
+  
+  var flashvars = {};
+  var params = {wmode:"transparent",scale:"noScale",salign:"tl"};
+  var attributes = {};
+  swfobject.embedSWF("_swf/anime_poiscaille.swf", "poiscaille", 152,107, "9.0.0", "swf/expressInstall.swf", flashvars, params, attributes);
+
+  
+</script> 
+</body> 
+</html> 
